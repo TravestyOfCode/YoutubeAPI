@@ -1,0 +1,13 @@
+﻿Get a list of subscribers id
+for each subscription, get channelId (items[x].snippet.resourceId.channelId)
+   can also get title/thumbnail
+for each channel, get contentDetails
+   relatedPlaylists."uploads"
+
+call playlistitems query using snippet
+foreach(var playlistItem in result.items)
+  snippet.resourceId.videoId
+  snippet.publishedAt
+  snippet.title
+  snippet.description
+  snippet.thumbnails.default.url
